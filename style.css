@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font: "Roboto", sans-serif;
+    --color--black: #000000;
+    --color--green: #092D38;
+    --color--dark--green: rgba(6, 22, 27, 0.5);
+    --color--text: #E1E1E6;
+}
+
+body * {
+    font-family: var(--font);
+}
+
+body {
+    color: var(--color--text);
+    background: var(--color--black);
+}
+
+#app {
+    margin: 10rem 5rem;
+}
+
+header {
+    margin-bottom: 5.44rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header div {
+    display: flex;
+    gap: 0.5rem;
+}
+
+header input {
+    background: #06181C;
+    border-radius: 5px;
+    color: #7C7C8A;
+    width: 15rem;
+    height: 3rem;
+    border: none;
+    padding: 1rem;
+}
+
+header button {
+    background: #065E7C;
+    color: #FFF;
+    border-radius: 5px;
+    padding: 12px 32px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 10.6rem;
+    height: 3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+header button:hover {
+    cursor: pointer;
+    background: #FFF;
+    color: #065E7C;
+}
+
+table {
+    width: 100%;
+    background: var(--color--green);
+    border-radius: 1rem;
+    border-collapse: collapse;
+    table-layout: auto;
+}
+
+
+
+table img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+}
+
+table td {
+    padding: 1rem;
+    margin: 0 auto;
+}
+
+
+table thead td {
+    background: var(--color--green);
+    border-radius: 1rem;
+    border-top: 10px solid rgba(0, 0, 0, 0);
+}
+
+table tbody tr:nth-child(odd) {
+    background: var(--color--black);
+    border-left: 10px solid rgba(0, 0, 0, 0);
+    border-right: 10px solid rgba(0, 0, 0, 0);
+}
+
+table tbody tr:nth-child(even) {
+    background: var(--color--dark--green);
+    border-left: 10px solid rgba(0, 0, 0, 0);
+    border-right: 10px solid rgba(0, 0, 0, 0);
+}
+
+
+table tr:last-child {
+    border-radius: 0 0 1rem 1rem;
+    border-bottom: 10px solid rgba(0, 0, 0, 0);
+}
+
+table button {
+    color: #F75A68;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+table a {
+    text-decoration: none;
+    color: var(--color--text);
+}
+
+table tbody tr td:first-child {
+    display: flex;
+    align-items: center;
+    gap: 1.3rem;
+}
+
+table p {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
